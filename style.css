@@ -1,0 +1,97 @@
+/* 1. Global Style.
+2. Typography
+3. Components
+4. Header
+5. Gallery
+6 .Footer */
+
+/*______________________1. GLOBAL STYLE */
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+}
+
+/* 2. TYPOGRAPHY */
+
+/* 3. COMPONENTS */
+
+/* 4. HEADER */
+
+.header {
+    background: url(/img/home-bg.jpg) no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #fff;
+}
+.header__nav {
+    background-color: rgba(55, 58, 60, .2);
+    min-width: 100%;
+}
+.nav__list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0;
+}
+.nav__item {
+    padding: 0.3em 0;
+    font-size: 1.2em;
+}
+
+.nav__link--modifer:visited,
+nav__link--modifer:link {
+    color: #fff;
+}
+
+.nav__link--modifer:hover {
+    color: #0275d8;
+}
+
+.main-header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: 100%;
+    padding-top: 0.5em;
+}
+.main-header__logo {
+    width: 7em;
+}
+.main-header__header {
+    margin: 5px;
+}
+
+.main-header__text {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.main-header__btn {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    padding: 15px 60px;
+    margin: 1em;
+}
+
+.main-header__btn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 1s ease;
+}
+
+/* 5. MAIN */
+
+/* 6. FOOTER */
