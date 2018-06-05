@@ -20,6 +20,10 @@ body {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
+
 /* 2. TYPOGRAPHY */
 
 /* 3. COMPONENTS */
@@ -34,16 +38,19 @@ body {
     align-items: center;
     color: #fff;
 }
+
 .header__nav {
     background-color: rgba(55, 58, 60, .2);
     min-width: 100%;
 }
+
 .nav__list {
     display: flex;
     flex-flow: column;
     align-items: center;
     padding: 0;
 }
+
 .nav__item {
     padding: 0.3em 0;
     font-size: 1.2em;
@@ -65,9 +72,11 @@ nav__link--modifer:link {
     min-width: 100%;
     padding-top: 0.5em;
 }
+
 .main-header__logo {
     width: 7em;
 }
+
 .main-header__header {
     margin: 5px;
 }
@@ -93,5 +102,45 @@ nav__link--modifer:link {
 }
 
 /* 5. MAIN */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+}
+
+.news__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 1rem 0.5rem;
+}
+
+.news__picture {
+    width: 100%;
+}
+
+.news__item {
+    text-align: left;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+}
+
+.news__btn {
+    color: #4EA7FF;
+    background: transparent;
+    border: 2px solid #4EA7FF;
+    border-radius: 3rem;
+    padding: 0.7rem 2rem;
+    align-self: flex-end;
+    margin: 0 1rem 1rem 0;
+}
+
+.news__btn:hover {
+    background-color: #4EA7FF;
+    color: #fff;
+    transition: 1s ease;
+}
 
 /* 6. FOOTER */
