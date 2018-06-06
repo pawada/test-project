@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 
 <head>
     <meta charset="utf-8" />
     <title>My first test website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -81,29 +81,67 @@
         <h2 class="gallery__header">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
         <p class="gallery__text">Enim tempora porro ratione velit atque est laborum fugiatmenda, quae delectus a suscipit. Lorem, ipsum dolor sitamet
             consectetur adipisicing elit. </p>
-        <img src="/img/tm-450x300-01.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-02.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-05.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-03.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-04.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-06.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-07.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-08.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-09.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-10.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-11.jpg" alt="picture" class="gallery__picture">
-        <img src="/img/tm-450x300-12.jpg" alt="picture" class="gallery__picture">
+
+        <ul class="gallery__list">
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-01.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-02.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-05.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-03.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-04.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-06.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-07.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-08.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-09.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-10.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-11.jpg" alt="picture">
+            </li>
+            <li class="gallery__picture">
+                <img src="/img/tm-450x300-12.jpg" alt="picture">
+            </li>
+        </ul>
     </section>
-    <footer class="contact">
-        <h2 class="contact__header">Contact Us!</h2>
-        <form action="" method="">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Subject" required>
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Submit</button>
+
+    <section class="contact">
+        <h2 class="contact-main__header">Contact Us!</h2>
+        <form class="contact__form" action="" method="">
+            <input class="contact__input" type="text" placeholder="Name" required>
+            <input class="contact__input" type="email" placeholder="Email" required>
+            <input class="contact__input" type="text" placeholder="Subject" required>
+            <textarea class="contact__input contact__message" placeholder="Message"></textarea>
+            <button class="contact__btn" type="submit">Submit</button>
         </form>
+        <div class="contact-text-conteiner">
+            <h3 class="contact__header">Etiam at rhoncus nisl</h3>
+            <p class="contact__text">Nunc rutrum ac ante euismod cursus. Suspendisse imperdiet feugiat massa nec iaculis</p>
+            <p class="contact__text">Tel: 010-020-0340</p>
+            <p class="contact__text">Email: info@company.com</p>
+        </div>
+    </section>
+    <footer>
+        <p class="footer-copyright">Copyright © 2016 &copy; Company Name</p>
     </footer>
+
 </body>
 
 </html>
