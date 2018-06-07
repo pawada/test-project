@@ -8,9 +8,7 @@
 9. Media query
 */
 
-
 /* 1. GLOBAL STYLE */
-
 
 .body {
     font-family: 400, 'Open Sans', Arial, Helvetica, sans-serif;
@@ -34,9 +32,7 @@
     list-style: none;
 }
 
-
 /* 2. COMPONENTS */
-
 
 .news__btn,
 .contact__btn {
@@ -57,9 +53,7 @@
     transition: 1s ease;
 }
 
-
 /* 3. HEADER */
-
 
 .header {
     background: url(/img/home-bg.jpg) no-repeat;
@@ -95,7 +89,7 @@ nav__link--modifer:link {
 .nav__link--modifer:hover {
     color: #0275d8;
     transition: 1s ease;
-} 
+}
 
 .main-header {
     display: flex;
@@ -133,9 +127,7 @@ nav__link--modifer:link {
     transition: 1s ease;
 }
 
-
 /* 4. NEWS */
-
 
 .news {
     display: flex;
@@ -190,10 +182,7 @@ galler__text {
     box-shadow: 3px 3px 5px 6px #000;
 }
 
-
-
 /* 6. CONCACT */
-
 
 .contact {
     background-color: #F4F4F4;
@@ -241,9 +230,7 @@ galler__text {
     text-align: center;
 }
 
-
 /*  8. Media query */
-
 
 @media all and (min-width: 768px) {
     .nav__list {
@@ -338,10 +325,9 @@ galler__text {
 }
 
 @media all and (min-width: 1224px) {
-   
     .main-header {
         padding: 8rem;
-    } 
+    }
     .nav__item:first-child {
         padding-left: 15rem;
     }
