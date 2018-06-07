@@ -1,18 +1,20 @@
-
 /* 1. Global Style.
-2. Typography
-3. Components
+2. Components
 4. Header
-5. Gallery
-6 .Footer */
+5. News
+6. Gallery
+7. Contact
+8. Footer 
+9. Media query
+*/
 
-/*______________________1. GLOBAL STYLE */
 
-body {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    
+/* 1. GLOBAL STYLE */
+
+
+.body {
+    font-family: 400, 'Open Sans', Arial, Helvetica, sans-serif;
 }
-
 
 .nav__list {
     list-style: none;
@@ -22,18 +24,19 @@ body {
     text-decoration: none;
 }
 
-img {
+.news__picture,
+.gallery__picture {
     width: 100%;
     height: 100%;
 }
 
-li {
+.gallery__list {
     list-style: none;
 }
 
-/* 2. TYPOGRAPHY */
 
-/* 3. COMPONENTS */
+/* 2. COMPONENTS */
+
 
 .news__btn,
 .contact__btn {
@@ -54,7 +57,9 @@ li {
     transition: 1s ease;
 }
 
-/* 4. HEADER */
+
+/* 3. HEADER */
+
 
 .header {
     background: url(/img/home-bg.jpg) no-repeat;
@@ -66,21 +71,20 @@ li {
 }
 
 .header__nav {
+    width: 100%;
     background-color: rgba(55, 58, 60, .2);
 }
 
 .nav__list {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
     padding: 0;
-    
-    
 }
 
 .nav__item {
     padding: 0.3em 0;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .nav__link--modifer:visited,
@@ -90,7 +94,8 @@ nav__link--modifer:link {
 
 .nav__link--modifer:hover {
     color: #0275d8;
-}
+    transition: 1s ease;
+} 
 
 .main-header {
     display: flex;
@@ -105,40 +110,41 @@ nav__link--modifer:link {
 }
 
 .main-header__header {
-    margin: 5px;
+    margin: 0.3rem;
 }
 
 .main-header__text {
     font-size: 1.2em;
-    margin: 10px;
-    font-weight: 400;
+    margin: 0.7rem;
 }
 
 .main-header__btn {
     border: 2px solid #fff;
-    border-radius: 50px;
+    border-radius: 3.3rem;
     background: transparent;
     color: #fff;
-    padding: 15px 60px;
-    margin: 1em;
+    padding: 0.9rem 4rem;
+    margin: 1rem;
 }
 
-.main-header__btn:hover {
+.main-header__btn--hover:hover {
     background-color: #fff;
     color: #000;
     transition: 1s ease;
 }
 
-/* 5. MAIN */
+
+/* 4. NEWS */
+
 
 .news {
     display: flex;
     flex-direction: column;
     background-color: #F4F4F4;
 }
+
 .news__header {
     font-size: 1.5rem;
-    font-weight: 400;
 }
 
 .news__container {
@@ -148,10 +154,6 @@ nav__link--modifer:link {
     margin: 1rem 0.5rem;
 }
 
-.news__picture {
-    width: 100%;
-}
-
 .news__item {
     text-align: left;
     color: #666;
@@ -159,19 +161,14 @@ nav__link--modifer:link {
     flex-direction: column;
 }
 
-
-/* GALLERY */
+/* 5. GALLERY */
 
 .gallery {
     text-align: center;
-    
 }
 
 .gallery__header {
     color: #006699;
-    font-weight: 400;
-
-    
 }
 
 galler__text {
@@ -184,58 +181,59 @@ galler__text {
     padding: 0;
 }
 
-.gallery__picture {
+.gallery__item {
     flex: 1 1 50%;
 }
 
-.gallery__picture:hover {
-    /* transform: scale(1.1);  */
+.gallery__picture--shadow:hover {
+    transform: scale(1);
+    box-shadow: 3px 3px 5px 6px #000;
 }
 
-/* CONCACT */
+
+
+/* 6. CONCACT */
+
+
+.contact {
+    background-color: #F4F4F4;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
 
 .contact-main__header {
     font-size: 2rem;
     color: #006699;
     text-align: center;
-    font-weight: 400;
-}
-
-.contact {
-    background-color: #F4F4F4;
-    padding-top: 1rem;
 }
 
 .contact__form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.contact__form--division .contact__input {
+    width: 100%;
 }
 
 .contact__input {
-    flex: 1 1 100%;
     height: 3rem;
     margin: 1rem 0.5rem;
     border: none;
     text-indent: 1rem;
 }
+
 .contact__message {
     height: 10rem;
 }
 
-.contact-text-conteiner {
-    padding-left: 1rem;
+.contact__text-conteiner {
+    padding-left: 1rem !important;
 }
-.contact__header {
-    color: #006699;
-}
-.contact__header {
-    font-weight: 400;
-}
-.contact__text {
-    margin: 0;
-    padding-bottom: 0.8rem;
-}
+
+/* 7. Footer */
+
 .footer-copyright {
     background-color: #F4F4F4;
     margin: 0;
@@ -244,11 +242,10 @@ galler__text {
 }
 
 
+/*  8. Media query */
+
 
 @media all and (min-width: 768px) {
-    .header__nav {
-        width: 100vw;
-    }
     .nav__list {
         flex-flow: row;
         justify-content: space-around;
@@ -260,56 +257,98 @@ galler__text {
         height: 4rem;
         margin: 0;
         padding: 0;
-        
-          
     }
-
+    .news {
+        padding: 1rem 2rem;
+    }
     .main-header {
         padding-top: 8rem;
+    }
+    .main-header__logo {
+        width: 10em;
+    }
+    .main-header__header {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+    .main-header__text {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .main-header__btn {
+        font-size: 1.5rem;
     }
     .news__container {
         flex-direction: row;
     }
     .news__item {
         flex: 0 1 50%;
-        margin-left: 3rem;
     }
-    .gallery__picture {
+    .news__header,
+    .news__text {
+        padding-left: 2rem;
+    }
+    .gallery {
+        margin: 0 3rem;
+    }
+    .gallery__header {
+        font-size: 2rem;
+    }
+    .gallery__text {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    .gallery__item {
         flex: 0 1 25%;
     }
-
     .fullscreen-container {
         display: flex;
         flex-direction: row;
     }
     .contact {
-        display: flex;
         padding: 0.5rem 2rem;
-        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: flex-end;
+    }
+    .contact-main__header {
+        width: 100%;
+        font-size: 2.2rem;
     }
     .contact__form {
-        flex: 2 1 100%;
+        flex: 2 1;
     }
     .contact-text-conteiner {
-        align-self: center;
+        flex: 1 1;
+    }
+    .contact__header {
+        font-size: 1.7rem;
+    }
+    .contact__text {
+        font-size: 1.2rem;
+    }
+    .contact__form--division {
+        display: flex;
+    }
+    .contact__form--division .contact__input {
+        flex: 1;
     }
 }
 
- @media all and (min-width : 1224px) {
-    .header {
-        
-        height: 50rem;
-        
-    }
+@media all and (min-width: 1224px) {
+   
     .main-header {
-        padding-top: 15rem;
-        
-    }
-
+        padding: 8rem;
+    } 
     .nav__item:first-child {
         padding-left: 15rem;
     }
     .nav__item:last-child {
         padding-right: 15rem;
     }
-} 
+    .news {
+        padding: 3rem 12rem;
+    }
+}
