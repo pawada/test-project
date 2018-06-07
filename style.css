@@ -56,7 +56,7 @@
 /* 3. HEADER */
 
 .header {
-    background: url(/img/home-bg.jpg) no-repeat;
+    background: url(/img/home-bg.JPG) no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-flow: column;
