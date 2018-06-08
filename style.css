@@ -226,7 +226,7 @@ galler__text {
 }
 
 .contact__text-conteiner {
-    padding-left: 1rem !important;
+    padding-left: 1rem;
 }
 
 .contact__header {
@@ -342,9 +342,9 @@ galler__text {
 
 @media all and (min-width: 1224px) {
     .news__btn,
-.contact__btn {
-    font-size: 1.2rem;
-}
+    .contact__btn {
+        font-size: 1.2rem;
+    }
     .main-header {
         padding: 8rem;
     }
