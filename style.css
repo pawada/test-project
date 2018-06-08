@@ -86,9 +86,13 @@ nav__link--modifer:link {
     color: #fff;
 }
 
+.nav__link--modifer {
+    color: #fff;
+    transition: color, 1s ease;
+}
+
 .nav__link--modifer:hover {
     color: #0275d8;
-    transition: 1s ease;
 }
 
 .main-header {
@@ -345,6 +349,9 @@ galler__text {
     }
     .nav__item:last-child {
         padding-right: 15rem;
+    }
+    .nav__link {
+        font-size: 1.5rem;
     }
     .news {
         padding: 3rem 12rem;
