@@ -341,6 +341,10 @@ galler__text {
 }
 
 @media all and (min-width: 1224px) {
+    .news__btn,
+.contact__btn {
+    font-size: 1.2rem;
+}
     .main-header {
         padding: 8rem;
     }
