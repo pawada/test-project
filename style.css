@@ -68,7 +68,9 @@ body {
 /* 3. HEADER */
 
 .header {
-    background:linear-gradient(0deg, rgba(65, 74, 79, 0.7), rgba(65, 74, 79, 0.7)), url("/test-project/img/tm-1800x600-01.jpg") no-repeat;
+    background:linear-gradient(0deg, rgba(65, 74, 79, 0.7), rgba(65, 74, 79, 0.7)),
+    url("/test-project/img/tm-1800x600-01.jpg") no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     display: flex;
     flex-flow: column;
