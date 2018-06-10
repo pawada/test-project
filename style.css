@@ -1,5 +1,5 @@
-/* 1. Global Style.
-2. Components
+/* 1. Global
+2. Buttons
 4. Header
 5. News
 6. Gallery
@@ -8,13 +8,14 @@
 9. Media query
 */
 
-/* 1. GLOBAL STYLE */
+/* 1. GLOBAL  */
 
-.body {
+body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-.nav__list {
+.nav__list,
+.gallery__list {
     list-style: none;
 }
 
@@ -28,11 +29,22 @@
     height: 100%;
 }
 
-.gallery__list {
-    list-style: none;
+/* 2. BUTTONS */
+
+.header__btn {
+    border: 2px solid #fff;
+    border-radius: 3.3rem;
+    background: transparent;
+    color: #fff;
+    padding: 0.9rem 4rem;
+    margin: 1rem;
 }
 
-/* 2. COMPONENTS */
+.header__btn--hover:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 1s ease;
+}
 
 .news__btn,
 .contact__btn {
@@ -46,8 +58,8 @@
     align-self: flex-end;
 }
 
-.news__btn:hover,
-.contact__btn:hover {
+.news__btn--hover:hover,
+.contact__btn--hover:hover {
     background-color: #4EA7FF;
     color: #fff;
     transition: 1s ease;
@@ -56,7 +68,7 @@
 /* 3. HEADER */
 
 .header {
-    background: url("/test-project/img/tm-1800x600-01.jpg") no-repeat;
+    background:linear-gradient(0deg, rgba(65, 74, 79, 0.7), rgba(65, 74, 79, 0.7)), url("/test-project/img/tm-1800x600-01.jpg") no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-flow: column;
@@ -66,7 +78,7 @@
 
 .header__nav {
     width: 100%;
-    background-color: rgba(55, 58, 60, .2);
+    background-color: rgba(55, 58, 60, .4);
 }
 
 .nav__list {
@@ -95,39 +107,24 @@ nav__link--modifer:link {
     color: #0275d8;
 }
 
-.main-header {
+.header__main-header {
     display: flex;
     flex-flow: column;
     align-items: center;
     padding-top: 0.5em;
 }
 
-.main-header__logo {
+.header__logo {
     width: 7em;
 }
 
-.main-header__header {
+.header__header {
     margin: 0.3rem;
 }
 
-.main-header__text {
+.header__text {
     font-size: 1.2em;
     margin: 0.7rem;
-}
-
-.main-header__btn {
-    border: 2px solid #fff;
-    border-radius: 3.3rem;
-    background: transparent;
-    color: #fff;
-    padding: 0.9rem 4rem;
-    margin: 1rem;
-}
-
-.main-header__btn--hover:hover {
-    background-color: #fff;
-    color: #000;
-    transition: 1s ease;
 }
 
 /* 4. NEWS */
@@ -153,10 +150,12 @@ nav__link--modifer:link {
 }
 
 .news__header {
+    padding-left: 1rem;
     font-size: 2rem;
 }
 
 .news__text {
+    padding-left: 1rem;
     font-size: 1.1rem;
     line-height: 2;
 }
@@ -256,7 +255,7 @@ galler__text {
         top: 0;
         left: 0;
         right: 0;
-        background-color: rgba(55, 58, 60, .2);
+        background-color: rgba(55, 58, 60, .4);
         height: 4rem;
         margin: 0;
         padding: 0;
@@ -264,21 +263,21 @@ galler__text {
     .news {
         padding: 1rem 2rem;
     }
-    .main-header {
+    .header__main-header {
         padding-top: 8rem;
     }
-    .main-header__logo {
+    .header__logo {
         width: 10em;
     }
-    .main-header__header {
+    .header__header {
         padding: 2rem;
         font-size: 3rem;
     }
-    .main-header__text {
+    .header__text {
         font-size: 1.5rem;
         padding-bottom: 1rem;
     }
-    .main-header__btn {
+    .header__btn {
         font-size: 1.5rem;
     }
     .news__container {
